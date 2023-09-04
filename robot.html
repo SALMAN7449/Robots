@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+  box-sizing:border-box;
+  font-family: 'Electrolize', sans-serif;
+  background-image: url(https://gumlet.assettype.com/greaterkashmir%2Fimport%2F2020%2F09%2FElectricalShock-e1618652409561.jpeg?auto=format%2Ccompress&fit=max&format=webp&w=768&dpr=1.0);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span{
+  font-family: 'Sacramento', cursive;
+  margin-right: 1%;
+}
+
+h1{
+  text-align:center;
+  font-size:3em;
+}
+
+.container{
+  width:500px;
+  height:500px;
+
+  margin:20px auto;
+  position:relative;
+  border-radius: 30px;
+}
+
+.part{
+  border:4px solid black;
+  background:lightgrey;
+}
+
+.mouth{
+  width:70px;
+  height: 20px;
+  background: red;
+  position:absolute;
+  top:18%;
+  left:44.5%;
+  border-radius:0% 0% 100% 100%;
+  animation: bounce 2s 0.5s infinite;
+  z-index:2;
+}
+
+.eye{
+  height:20px;
+  width:20px;
+  border-radius:100%;
+  position:absolute;
+  background:black;
+  border:black;
+  animation: bounce 2s 0.5s infinite;
+  z-index:2;
+}
+
+.eye-left{
+  left: 45%;
+  top: 10%;
+}
+
+.eye-right{
+  left: 55%;
+  top: 10%;
+}
+
+.body{
+  height:150px;
+  width:150px;
+  position: absolute;
+  bottom:40%;
+  left:36%;
+  border-radius:30px;
+  animation: bounce 2s infinite;
+}
+
+.leg{
+  height:200px;
+  width:50px;
+  border-radius:10px;
+}
+
+.arm{
+  height:150px;
+  width:50px;
+  border-radius:10px;
+}
+
+.head{
+  height:100px;
+  width:100px;
+  border-radius:10px;
+  position:absolute;
+  top:5%;
+  left:41.5%;
+  animation: bounce 2s 0.5s infinite;
+  z-index:1;
+}
+
+.neck{
+  height:100px;
+  width:50px;
+  border-radius:10px;
+  position:absolute;
+  top:24.5%;
+  left:46.5%;
+  animation: bounce 2s infinite;
+}
+
+.leg-left{
+  position:absolute;
+  left:36%;
+  top:55%;
+  border-bottom: 40px solid red;
+}
+
+.leg-right{
+  position:absolute;
+  left:56%;
+  top:55%;
+  border-bottom: 40px solid red;
+}
+
+.arm-left{
+  position:absolute;
+  left:25%;
+  top:30%;
+  transform:rotate(45deg);
+  border-bottom: 40px solid red;
+  animation: bounceleft 2s infinite;
+}
+
+.arm-right{
+  position:absolute;
+  left:67%;
+  top:30%;
+  transform:rotate(135deg);
+  border-top: 40px solid red;
+  animation: bounceright 2s infinite;
+}
+
+@keyframes bounce{
+  0% { transform: translateX(0) }
+  40% { transform: translateY(0) }
+  50% { transform: translateY(20px) }
+  100% { transform: translateY(0) }
+}
+
+@keyframes bounceleft{
+  0% { transform: translateX(0) rotate(45deg) }
+  40% { transform: translateY(0) rotate(45deg) }
+  50% { transform: translateY(20px) rotate(60deg) }
+  100% { transform: translateY(0) rotate(45deg) }
+}
+
+@keyframes bounceright{
+  0% { transform: translateX(0) rotate(135deg)}
+  40% { transform: translateY(0) rotate(135deg) }
+  50% { transform: translateY(20px) rotate(125deg)}
+  100% { transform: translateY(0) rotate(135deg)}
+}
+
+</style>
+</head>
+<body>
+    <h1></h1>
+    
+<div class="container">
+    <div class="part head"></div>
+    <div class="part neck"></div>
+    <div class="part eye eye-left"></div>
+    <div class="part eye eye-right"></div>
+    <div class="part mouth"></div>
+    <div class="part leg leg-left"></div>
+    <div class="part leg leg-right"></div>
+    <div class="part arm arm-left"></div>
+    <div class="part arm arm-right"></div>
+    <div class="part body"></div>
+    <div class="st eam"></div>
+    <div class="st eam1"></div>
+    <div class="st eam2"></div>
+    <div class="st eam3"></div>
+    <div class="st eam4"></div>
+    <div class="st eam5"></div>
+ </div>
+</body>
+</html>
